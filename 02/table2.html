@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- caption은 제목 aria-describedby 속성은 테이플 설명 제공 -->
+    <p id="summary">HTML5를 지원하는 모던 브라우저를 정리한 것</p>
+    <table border="1" aria-describedby="summary">
+        <caption>
+            <strong>Modern Browser</strong>
+            <p>국내에서 자주 사용하는 모던 브라우저</p>
+        </caption>
+        <thead>
+            <tr>
+                <th>브라우저</th>
+                <th>제조업체</th>
+                <th>다운</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>크롬</th>
+                <th>GOOGLE</th>
+                <th>www.google.com</th>
+            </tr>
+            <tr>
+                <th>파이어폭스</th>
+                <td>Mozilla</td>
+                <td>www.mozilla.org</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
