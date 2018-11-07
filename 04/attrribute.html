@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        legend {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        label.reg {
+            color:cornflowerblue;
+            width:150px;
+            float: left;
+            text-align: right;
+            padding-right: 10px;
+        }
+        ul li {
+            list-style: none;
+            margin: 15px 0;
+        }
+        button {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>여름방학 특강 신청</h1>
+    <form action="">
+        <fieldset>
+            <legend>수강 과목</legend>
+            <ul>
+                <li>
+                    <label for="uname" class="reg">이름</label>
+                    <input type="text" id="uname" autofocus required>
+                </li>
+                <li>
+                    <label for="uid" class="reg">학번</label>
+                    <input type="text" id="uid" placeholder="하이픈없이 입력">
+                </li>
+                <li>
+                    <label for="sub" class="reg">영어회화<small>(초급)</small></label>
+                    <input type="text" id="sub" value="오전 09:00 ~11:00" readonly>
+                </li>
+                <li>
+                    <label for="Dept" class="reg">학과</label>
+                    <select name="Dept" id="Dept">
+                        <option value="ci">컴정</option>
+                        <option value="ce">컴공</option>
+                    </select>
+                </li>
+                <li><button onclick="alert('띵')">제출</button></li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
