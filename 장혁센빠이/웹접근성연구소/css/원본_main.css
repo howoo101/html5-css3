@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+.con>div:nth-of-type(1)>div:nth-of-type(1) {
+    float:left;
+    width:280px;
+    height: 300px;
+    background-color: red;
+}
+.con>div:nth-of-type(1)>div:nth-of-type(2) {
+    float:left;
+    width:400px;
+    height: 300px;
+    margin-left:20px;
+    margin-right:20px;
+    background-color: blue;
+}
+.con>div:nth-of-type(1)>div:nth-of-type(3) {
+    float:right;
+    width:280px;
+    height: 300px;
+    background-color: green;
+}
+.con>div:nth-of-type(2) {
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+.con>div:nth-of-type(2)>div {
+    float:left;
+    width:33.333%;
+}
+.con>div:nth-of-type(3)>div:nth-of-type(1) {
+    float:left;
+    width:490px;
+    background-color: #f9f;
+}
+.con>div:nth-of-type(3)>div:nth-of-type(2) {
+    float:right;
+    width:490px;
+    background-color: #ff9;
+}

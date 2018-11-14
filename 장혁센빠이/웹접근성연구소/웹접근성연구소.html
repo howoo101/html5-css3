@@ -5,10 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>웹접근성 연구소</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- ie8 이하에서 html5 시멘틱 태그와,  css3 선택자 일부 지원 -->
+    <!--[if lt IE 9]>
+    <script src="js/html5.js"></script>
+    <script src="js/selector.js"></script>
+    <![endif]-->
 </head>
 <body>
     <!-- header -->
-    <header class="center">
+    <header class="center clear" id="hd">
         <h1>
             <a href="#">웹접근성 로고</a>
         </h1>
@@ -16,36 +25,37 @@
             <form action="#" method="post" name="global_search">
                 <fieldset>
                     <legend class="blind">검색창</legend>
-                    <label for="search">검색창</label>
+                    <label class="blind" for="search">검색창</label>
                     <input type="text" id="search" title="검색어 입력">
                     <input type="submit" title="검색이동">
                 </fieldset>
             </form>
         </div>
         <div>
-            <ul>
+            <ul class="clear">
                 <li><a href="#">로그인</a></li>
                 <li><a href="#">회원가입</a></li>
                 <li><a href="#">사이트맵</a></li>
             </ul>
         </div>
     </header>
+    <!-- //header end -->
     <!-- GNB -->
-    <div>
-        <nav class="center">
-            <ul>
+    <div id="gnb_wrap">
+        <nav class="center" id="gnb">
+            <ul clear="clear">
                 <li>웹 접근성이란</li>
                 <li>진단 및 컨설팅</li>
                 <li>교육마당</li>
                 <li>지식마당</li>
                 <li>정보마당</li>
-                <li>기관 소개</li>
             </ul>
         </nav>
     </div>
+    <!-- //GNB end -->
     <!-- Contents -->
-    <div class="center">
-        <div>
+    <div class="center con">
+        <div class="clear">
             <div>
                 <div>
                     <a href="#">
@@ -109,7 +119,7 @@
                 </div>
             </div>
         </div>
-        <div>
+        <div class="clear">
             <div>
                 <a href="#">
                     <h2>웹 접근성 전문가 상담</h2>
@@ -129,7 +139,7 @@
                 </a>
             </div>
         </div>
-        <div>
+        <div class="clear">
             <div>
                 <h2>공지사항</h2>
                 <ul>
@@ -152,21 +162,28 @@
             </div>            
         </div>
     </div>
+    <!-- //Contents end -->
     <!-- footer -->
-    <footer>
-        <a href="#" title="한국정보화진흥원 홈페이지 바로가기"><h2>한국정보화진흥원 로고</h2></a>
-        <ul>
-            <li><a href="#">한국정보화진흥원</a></li>
-            <li><a href="#">웹 접근성 정책</a></li>
-            <li><a href="#">개인정보처리방침</a></li>
-            <li><a href="#">이메일무단수집거부</a></li>
-            <li><a href="#">찾아오시는 길</a></li>
-            <li><a href="#">뷰어내려받기</a></li>
-        </ul>
-        <address>대구광역시 동구 첨단로 53 (41068) 디지털문화본부</address>
-        <small>Copyright ⓒ 2017 National Information Society Agency</small>
-        <a href="#" title="한국웹접근성평가센터 인증현황 바로가기"><h2>과학기술정보통신부 로고</h2></a>
-        <h2>107 손말이음센터 연락처</h2>
+    <footer id="ft">
+        <div class="center clear">
+            <a href="#" class="logo2"><h2>한국정보화진흥원 로고</h2></a>
+            <div class="ft_info">
+                <ul class="clear">
+                    <li><a href="#">한국정보화진흥원</a></li>
+                    <li><a href="#">웹 접근성 정책</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                    <li><a href="#">이메일무단수집거부</a></li>
+                    <li><a href="#">찾아오시는 길</a></li>
+                    <li><a href="#">뷰어내려받기</a></li>
+                </ul>
+                <address>대구광역시 동구 첨단로 53 (41068) 디지털문화본부</address>
+                <small>Copyright ⓒ 2017 National Information Society Agency</small>
+            </div>
+            <div class="ft_site clear">
+                <a href="#"><h2>과학기술 <br>정보통신부 로고</h2></a>
+                <h2>107 손말이음센터 연락처</h2>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
