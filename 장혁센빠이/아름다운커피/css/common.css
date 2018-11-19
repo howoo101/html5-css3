@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+body {
+    font-size:12px;
+    color:#333;
+}
+
+a:link, a:visited {
+    color:#333;
+    text-decoration: none;
+}
+a:hover, a:focus {
+    color:#f00;
+}
+img {
+    vertical-align: top;
+}
+.center {
+    width:1000px;
+    margin: 0 auto;
+}
+
+.blind {
+    position: absolute;
+    left:-9999px;
+}
